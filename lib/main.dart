@@ -58,10 +58,8 @@ class _MyHomePageState extends State<MyHomePage> {
     switch (selectedIndex) {
       case 0:
         page = GeneratorPage();
-        break;
-      case 1:
+       case 1:
         page = FavoritesPage();
-        break;
       default:
         throw UnimplementedError('no widget for $selectedIndex');
     }
@@ -87,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   onDestinationSelected: (value) {
                     setState(() {
                       selectedIndex = value;
-                    });;
+                    });
                   },
                 ),
               ),
@@ -205,4 +203,3 @@ class BigCard extends StatelessWidget {
   }
 }
 
-// 00:04 15/12/2025 arrivato fno a Aggiunta di una carta di credito
